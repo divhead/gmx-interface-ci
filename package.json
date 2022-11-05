@@ -95,6 +95,7 @@
     ]
   },
   "devDependencies": {
+    "@actions/core": "1.10.0",
     "@lingui/cli": "^3.13.3",
     "@lingui/loader": "3.14.0",
     "@lingui/macro": "3.13.3",

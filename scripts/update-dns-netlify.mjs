@@ -1,11 +1,12 @@
 import fetch from "node-fetch";
+import core from '@actions/core';
 
 const NETLIFY_API_URL = "https://api.netlify.com/api/v1";
 
-const NETLIFY_API_KEY = process.env.NETLIFY_API_KEY;
-const NETLIFY_DNS_ZONE_ID = process.env.NETLIFY_DNS_ZONE_ID;
-const NETLIFY_DNS_LINK = process.env.NETLIFY_DNS_LINK;
-const IPFS_HASH = process.env.IPFS_HASH;
+const NETLIFY_API_KEY = core.getInput('API_KEY');
+const NETLIFY_DNS_ZONE_ID = core.getInput('DNS_ZONE');
+const NETLIFY_DNS_LINK = core.getInput('DNS_LINK');
+const IPFS_HASH = core.getInput('IPFS_HASH');
 
 if (!NETLIFY_API_KEY) throw new Error('NETLIFY_API_KEY is required');
 if (!NETLIFY_DNS_ZONE_ID) throw new Error('NETLIFY_DNS_ZONE_ID is required');
