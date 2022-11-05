@@ -2865,16 +2865,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinata/sdk@npm:2.0.0":
-  version: 2.0.0
-  resolution: "@pinata/sdk@npm:2.0.0"
+"@pinata/sdk@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@pinata/sdk@npm:1.2.0"
   dependencies:
     axios: ^0.21.1
     base-path-converter: ^1.0.2
     form-data: ^2.3.3
     is-ipfs: ^0.6.0
-    path: ^0.12.7
-  checksum: 3024bc0df4bedaaf85512ddd86a9f911f370056f18bf73240bdb6a272de24f7687acb25f42f4c6270963379931495f33bc5cf44e78b7127465a78a9f4bcecf36
+    recursive-fs: ^1.1.2
+  checksum: 930d174c39d10fa2734bc792215a25c577a0c24aa3c1cca4b4d90a8c16ae8465279f05072c9b239f6c17e30d2014412d18b0ef97fa89ff4d74b650962a4b183f
   languageName: node
   linkType: hard
 
@@ -9266,7 +9266,7 @@ __metadata:
     "@lingui/loader": 3.14.0
     "@lingui/macro": 3.13.3
     "@lingui/react": 3.13.3
-    "@pinata/sdk": 2.0.0
+    "@pinata/sdk": 1.2.0
     "@testing-library/jest-dom": 5.16.1
     "@testing-library/react": 11.2.7
     "@testing-library/user-event": 12.8.3
@@ -13774,16 +13774,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path@npm:^0.12.7":
-  version: 0.12.7
-  resolution: "path@npm:0.12.7"
-  dependencies:
-    process: ^0.11.1
-    util: ^0.10.3
-  checksum: 5dedb71e78fc008fcba797defc0b4e1cf06c1f18e0a631e03ba5bb505136f587ff017afc14f9a3d481cbe77aeedff7dc0c1d2ce4d820c1ebf3c4281ca49423a1
-  languageName: node
-  linkType: hard
-
 "pbkdf2@npm:^3.0.3":
   version: 3.1.2
   resolution: "pbkdf2@npm:3.1.2"
@@ -14854,7 +14844,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"process@npm:^0.11.1, process@npm:^0.11.10":
+"process@npm:^0.11.10":
   version: 0.11.10
   resolution: "process@npm:0.11.10"
   checksum: bfcce49814f7d172a6e6a14d5fa3ac92cc3d0c3b9feb1279774708a719e19acd673995226351a082a9ae99978254e320ccda4240ddc474ba31a76c79491ca7c3
@@ -15800,6 +15790,16 @@ __metadata:
     react: ^16.0.0 || ^17.0.0
     react-dom: ^16.0.0 || ^17.0.0
   checksum: dde2b0783f4a94782b715cd5c27ac444f11ad0d9066f69d7906e2c168a97c4c6796b94bad020c196ff5564c4a022e6052276f72e29d92220441e238a617dd070
+  languageName: node
+  linkType: hard
+
+"recursive-fs@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "recursive-fs@npm:1.1.2"
+  bin:
+    recursive-copy: ./bin/recursive-copy
+    recursive-delete: ./bin/recursive-delete
+  checksum: 6b330d2e6b1359b179736c77ecdf64cc98e778fde676ca7b39b3ea6045dbab4d659d625ffb45e1c31871e8ee2c9bc73f9cf72f661baecf1053677614ceef0989
   languageName: node
   linkType: hard
 
@@ -18474,15 +18474,6 @@ __metadata:
   dependencies:
     inherits: 2.0.1
   checksum: bd800f5d237a82caddb61723a6cbe45297d25dd258651a31335a4d5d981fd033cb4771f82db3d5d59b582b187cb69cfe727dc6f4d8d7826f686ee6c07ce611e0
-  languageName: node
-  linkType: hard
-
-"util@npm:^0.10.3":
-  version: 0.10.4
-  resolution: "util@npm:0.10.4"
-  dependencies:
-    inherits: 2.0.3
-  checksum: 913f9a90d05a60e91f91af01b8bd37e06bca4cc02d7b49e01089f9d5b78be2fffd61fb1a41b517de7238c5fc7337fa939c62d1fb4eb82e014894c7bee6637aaf
   languageName: node
   linkType: hard
 

@@ -99,7 +99,7 @@
     "@lingui/cli": "^3.13.3",
     "@lingui/loader": "3.14.0",
     "@lingui/macro": "3.13.3",
-    "@pinata/sdk": "2.0.0",
+    "@pinata/sdk": "1.2.0",
     "eslint": "7.32.0",
     "husky": "7.0.4",
     "lint-staged": "12.3.4",
