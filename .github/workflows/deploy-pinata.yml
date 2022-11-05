@@ -50,7 +50,7 @@ jobs:
                   const page = await browser.newPage();
 
                   try {
-                    await page.goto('https://cloudflare-ipfs.com/ipfs/${{ steps.pinata.outputs.hash }}');
+                    await page.goto('https://${{ steps.pinata.outputs.hash }}.ipfs.cf-ipfs.com');
                     await page.waitForSelector('.App')
 
                     await page.waitForNetworkIdle({idleTime: 500})
