@@ -15,4 +15,4 @@ inputs:
     required: true
 runs:
   using: 'node16'
-  main: './scripts/update-dns-netlify.mjs'
+  main: './index.mjs'
