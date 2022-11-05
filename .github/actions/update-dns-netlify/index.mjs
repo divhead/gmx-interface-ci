@@ -96,4 +96,4 @@ async function purgeCloudflareDNSCache () {
       console.error('error purge CF cache')
       console.log(await res.text());
     }
-  }
+}

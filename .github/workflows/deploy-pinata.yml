@@ -25,14 +25,12 @@ jobs:
 
       - name: Pinata
         id: pinata
-        uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.4
+        uses: './.github/actions/pinata'
         with:
-          pin-name: gmx-interface
-          path: './build'
-          pinata-api-key: ${{ secrets.PINATA_API_KEY }}
-          pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET }}
-          verbose: true
-          remove-old: true
+          PIN_NAME: gmx-interface
+          PATH: './build'
+          API_KEY: ${{ secrets.PINATA_API_KEY }}
+          API_SECRET: ${{ secrets.PINATA_API_SECRET }}
 
       - name: Resolve CID on gateway
         id: resolve-cid
