@@ -20,7 +20,7 @@ async function main() {
 }
 
 async function uploadToPinata(path) {
-  const pinata = pinataSDK(env.PINATA_API_KEY, env.PINATA_API_SECRET);
+  const pinata = pinataSDK(API_KEY, API_SECRET);
 
   console.log("Upload to Pinata");
 
@@ -29,7 +29,7 @@ async function uploadToPinata(path) {
   console.log("Auth successful");
 
   const previousPins = await pinata.pinList({
-    metadata: { name: env.PINATA_PIN_ALIAS },
+    metadata: { name: PIN_NAME },
     status: "pinned",
   });
 
@@ -41,7 +41,7 @@ async function uploadToPinata(path) {
 
   const pinResult = await pinata.pinFromFS(path, {
     pinataMetadata: {
-      name: env.PINATA_PIN_ALIAS,
+      name: PIN_NAME,
     },
     pinataOptions: {
       customPinPolicy: {
